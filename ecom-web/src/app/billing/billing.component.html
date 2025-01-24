@@ -1,0 +1,22 @@
+<div class="container">
+  <table class="table" *ngIf="billing">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>billing Date</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let p of billing._embedded.bills">
+      <td>{{p.id}}</td>
+      <td>{{p.billingDate}}</td>
+
+      <td>
+        <button class="btn btn-success">billing</button>
+      </td>
+
+    </tr>
+    </tbody>
+  </table>
+
+</div>
